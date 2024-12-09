@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+    background-color: rgb(80, 80, 80); 
+}
+body{
+    border: 1px solid gray;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    padding: 20px;
+    width: 30%;
+    margin-left: 450px;
+    margin-top:60px ;
+}
+p{
+    display: inline;
+    color: rgb(201, 194, 194);
+}
+.sign{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: medium;
+    text-decoration: none;
+}
+.input-group{
+    position: relative;
+    margin: 20px;
+}
+.input{
+    border: 1px solid gray;
+    background-color: transparent;
+    padding: 10px;
+    width: 330px;
+}
+.value{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0px 5px;
+    transition: 0.3s;
+    color: rgb(126, 126, 126);
+    border: none;
+}
+.input:focus + .value{
+    top: -10px;
+    color: white;
+    background-color:rgb(80, 80, 80) ;
+}
+.login{
+    width: 85%;
+    margin: 10px 22px 10px;
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.content{
+    display: inline;
+    display: inline-block;
+    margin: 0px 10px 0px;
+}
+.first{
+    width: 25%;
+    margin-left:35px ;
+    display: inline-block;
+}
+.last{
+    width: 25%;
+    display: inline-block;
+}
+.facebook{
+    background-color: rgb(32, 32, 221);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 27px;
+    width: 25%;
+    margin-top: 20px;
+}
+.google{
+    background-color: rgb(218, 13, 13);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    width: 25%;
+    margin-top: 20px;
+}
+.twitter{
+    background-color: rgb(40, 101, 182);
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-left: 10px;
+    width: 25%;
+    margin-top: 20px;
+}
+.login, .facebook, .google, .twitter{
+    cursor: pointer;
+}

@@ -1,0 +1,480 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: red;
+    color: white;
+}
+body{
+    width: 100%;
+    background: #292929;
+}
+header{
+    background-color: #1d1d1d;
+    color: white;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 5px;
+    z-index: 10000;
+}
+header div{
+    flex: 8;
+    margin-left: 30px;
+}
+header nav {
+    flex: 4;
+    margin-left: 500px;
+}
+nav a img{
+    margin-left: 40px;
+}
+.user-id:hover{
+    color: white;
+}
+.banner img{
+    width: 700px;
+    height: 600px;
+    margin-left: 550px;
+    margin-top: 60px;
+    position: relative;
+    z-index: 2;
+}
+.banner .back-text{
+    position: absolute;
+    display: inline-block;
+    color: rgb(53, 52, 52);
+    margin-top: 100px;
+    font-size: 250px;
+    font-weight: 900;
+    z-index: 1;
+}
+.banner .content{
+    color: white;
+    font-size: xx-large;
+    position: absolute;
+    width: 450px;
+    z-index: 3;
+    transform: translate(100px, 200px);
+}
+.content img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin: 10px 10px 0px;
+}
+.content .gray-rupees{
+   width: 18px;
+   height: 18px;
+   margin-top: 15px;
+}
+.current-rs{
+    margin-left: 30px;
+    display: inline-block;
+    font-size: bold;
+    font-weight: 800;
+    font-size: x-large;
+}
+.old-rs{
+    margin-left: 30px;
+    font-size: large;
+    color: gray;
+    text-decoration: line-through;
+    display: inline-block;
+}
+.content button{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    width: 80px;
+    border: none;
+    font-size: x-small;
+}
+.content button:hover{
+    cursor: pointer;
+}
+.heading{
+    color: white;
+    text-align: center;
+    margin: 100px 0px 100px;
+    font-size: x-large;
+}
+.products{
+    display: flex;
+    justify-content: space-around;
+}
+.product-1{
+    width: 150px;
+    height: 200px;
+    margin: 65px 0px 0px;
+}
+.product-1 div img{
+    width: 70px;
+    margin: 10px 20px 0px;
+}
+.product-1 h4{
+    color: rgb(92, 90, 90);
+    text-align: center;
+    font-size: small;
+}
+.product-1 .current-rs img{
+    width: 15px;
+    margin-left: 10px;
+}
+.product-1 .current-rs{
+    color: white;
+    display: inline-block;
+    margin: 0px;
+    font-size:large;
+}
+.product-1 .old-rs img{
+    display: inline-block;
+    margin-left: 3px;
+    width: 11px;
+}
+.product-1 .old-rs{
+    margin: 0px;
+    font-size: small;
+}
+.product-2{
+    width: 180px;
+    height: 200px;
+    margin: 40px 10px 10px;
+}
+.product-2 div img{
+    width: 130px;
+    margin: 10px 30px 5px;
+}
+.product-2 h4{
+    color: rgb(92, 90, 90);
+    text-align: center;
+}
+.product-2 .current-rs img{
+    width: 15px;
+    margin-left: 45px;
+}
+.product-2 .current-rs{
+    color: white;
+    display: inline-block;
+    margin: 0px;
+    font-size: medium;
+}
+.product-2 .old-rs img{
+    display: inline-block;
+    margin-left: 3px;
+    width: 11px;
+}
+.product-2 .old-rs{
+    margin: 0px;
+    font-size: small;
+}
+.product-3{
+    width: 200px;
+    height: 200px;
+
+}
+.product-3 div img{
+    width: 200px;
+    margin: 10px 0px 5px;
+}
+.product-3 h4{
+    color: rgb(92, 90, 90);
+    text-align: center;
+    font-size: large;
+}
+.product-3 .current-rs img{
+    width: 18px;
+    margin-left: 20px;
+}
+.product-3 .current-rs{
+    color: white;
+    display: inline-block;
+    margin: 0px;
+}
+.product-3 .old-rs img{
+    display: inline-block;
+    margin-left: 3px;
+    width: 15px;
+}
+.product-3 .old-rs{
+    margin: 0px;
+}
+.product-4{
+    width: 180px;
+    height: 200px;
+    margin: 40px 10px 10px;
+}
+.product-4 div img{
+    width: 130px;
+    margin: 10px 20px 5px;
+}
+.product-4 h4{
+    color: rgb(92, 90, 90);
+    text-align: center;
+}
+.product-4 .current-rs img{
+    width: 15px;
+    margin-left: 10px;
+}
+.product-4 .current-rs{
+    color: white;
+    display: inline-block;
+    margin: 0px;
+    font-size: medium;
+}
+.product-4 .old-rs img{
+    display: inline-block;
+    margin-left: 3px;
+    width: 11px;
+}
+.product-4 .old-rs{
+    margin: 0px;
+    font-size: small;
+}
+.product-5{
+    width: 150px;
+    height: 200px;
+    margin: 65px 0px 0px;
+}
+.product-5 div img{
+    width: 70px;
+    margin: 10px 40px 0px;
+}
+.product-5 h4{
+    color: rgb(92, 90, 90);
+    text-align: center;
+    font-size: small;
+}
+.product-5 .current-rs img{
+    width: 15px;
+    margin-left: 30px;
+}
+.product-5 .current-rs{
+    color: white;
+    display: inline-block;
+    margin: 0px;
+    font-size:large;
+}
+.product-5 .old-rs img{
+    display: inline-block;
+    margin-left: 3px;
+    width: 11px;
+}
+.product-5 .old-rs{
+    margin: 0px;
+    font-size: small;
+}
+.products-names button{
+    color: rgb(150, 143, 143);
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    margin-left: 170px;
+}
+.products-names .all{
+    color: white;
+    width: 50px;
+    padding: 10px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+}
+.products-names button:hover{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+}
+main{
+    width: 100%;
+    margin: 50px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+}
+.row-1 {
+    border: 1px solid gray;
+    width: 300px;
+    margin: 10px 15px 0px;
+}
+.row-1 span img{
+    width: 150px;
+    margin: 10px 50px 5px;
+}
+.row-1 span img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.row-1 div{
+    background-color: rgb(22, 22, 22);
+    height: 210px;
+}
+.row-1 div img{
+    width: 50px;
+    margin: 20px 10px 10px;
+}
+.row-1 div h2{
+    color: white;
+    margin: 0px 10px 0px;
+}
+.row-1 div h4{
+    color: rgb(124, 124, 124);
+    font-size: 15px;
+    margin: 5px 10px 10px;
+}
+hr{
+    margin: 10px 10px 10px;
+    border-color: gray;
+}
+.row-1 div .current-rs img{
+    width: 20px;
+    margin: 0px;
+}
+.row-1 div .current-rs{
+    color: white;
+    margin: 0px 10px 0px;
+
+}
+.row-1 div .old-rs img{
+    width: 15px;
+    margin: 0px;
+}
+.row-1 div .old-rs{
+    margin: 0px 10px 0px;
+}
+.row-1 div button{
+    background-color: red;
+    color: white;
+    width: 250px;
+    padding: 10px;
+    margin: 10px 12px 10px;
+    border: none;
+    border-radius: 4px;
+}
+.row-end{
+    border: 1px solid gray;
+    width: 300px;
+    margin: 10px 15px 0px;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+.row-end h2{
+    display: inline;
+}
+.row-end img{
+    width: 20px;
+}
+.sub-footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sub-footer img{
+    width: 50px;
+    margin-left: 30px;
+}
+.sub-icons h3{
+    color: white;
+    font-size: x-large;
+    margin-right: 60px;
+}
+.sub-icons p{
+    color: grey;
+    font-size: large;
+    margin: 0px;
+}
+footer{
+    border: 1px solid;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    margin: 80px 0px 0px ;
+    padding: 30px 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-address{
+    border: 1px solid;
+    width: 300px;
+}
+.footer-address h2{
+    color: white;
+    font-size: xx-large;
+    padding: 30px 10px 30px;
+}
+.footer-address p{
+    color: rgb(138, 138, 138);
+    font-size: large;
+    padding: 0px 10px 10px;
+}
+.footer-address input{
+    width: 300px;
+    padding: 10px;
+    margin: 20px 10px 20px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+}
+.footer-button{
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: large;
+    width: 120px;
+    margin: 0px 10px 10px;
+}
+.footer-details{
+    border: 1px solid;
+    width: 300px;
+}
+.footer-details h3{
+    color: white;
+    font-size: x-large;
+    margin: 30px 40px 20px;
+}
+.footer-details ul li{
+    color: rgb(138, 138, 138);
+    list-style: none;
+    font-size: larger;
+    padding: 5px;
+    margin: 10px 40px 20px;
+}
+.footer-details ul li:hover{
+    cursor: pointer;
+    color: white;
+}
+.last-line{
+    margin: 0px;
+}
+.last-details{
+    display: flex; 
+    background-color: black;  
+}
+.last-1{
+    flex: 10;
+    color: white;
+    font-size: large;
+    padding: 10px;
+}
+.last-2{
+    flex: 2;
+}
+.last-2 a img{
+    width: 20px;
+    margin: 10px;
+}
+.top{
+    width: 35px;
+    height: 35px;
+    font-size: xx-large;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-left: 1306px;
+    padding: 3px 0px 0px;
+}
